@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.ktu_vr.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\ldruk\\OneDrive\\Desktop\\KTU_VR0.5\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "KTU_VR [Testing]"
+        }
+      }
+    }
+  ]
+}
