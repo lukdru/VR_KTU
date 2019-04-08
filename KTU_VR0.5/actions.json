@@ -71,7 +71,8 @@
     },
     {
       "name": "/actions/mixedreality/in/HeadsetOnHead",
-      "type": "boolean"
+      "type": "boolean",
+      "requirement": "optional"
     },
     {
       "name": "/actions/mixedreality/in/Grab",
