@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 11}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 548}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -42,8 +42,8 @@ MonoBehaviour:
     y: 169
     width: 689
     height: 174
-  m_MinSize: {x: 104, y: 124}
-  m_MaxSize: {x: 4004, y: 4024}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 24}
   m_Panes:
   - {fileID: 24}
@@ -70,10 +70,10 @@ MonoBehaviour:
     y: 0
     width: 689
     height: 343
-  m_MinSize: {x: 104, y: 187}
-  m_MaxSize: {x: 4004, y: 8048}
+  m_MinSize: {x: 100, y: 163}
+  m_MaxSize: {x: 4004, y: 8024}
   vertical: 1
-  controlID: 154
+  controlID: 142
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -121,10 +121,10 @@ MonoBehaviour:
     y: 724
     width: 1641
     height: 343
-  m_MinSize: {x: 336, y: 274}
+  m_MinSize: {x: 332, y: 274}
   m_MaxSize: {x: 14006, y: 10024}
   vertical: 0
-  controlID: 88
+  controlID: 90
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 18008, y: 14048}
   vertical: 0
-  controlID: 10
+  controlID: 60
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -342,7 +342,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 14006, y: 14048}
   vertical: 1
-  controlID: 11
+  controlID: 61
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -367,7 +367,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 12
+  controlID: 62
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -483,22 +483,22 @@ MonoBehaviour:
     m_ReferencingInstanceIDs: 
     m_SceneHandles: 
     m_ShowAllHits: 0
-    m_SearchArea: 1
+    m_SearchArea: 0
     m_Folders:
-    - Assets/SteamVR/InteractionSystem/Teleport/Scripts
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 60
   m_LastFolders:
-  - Assets/SteamVR/InteractionSystem/Teleport/Scripts
+  - Assets/Scripts
   m_LastFoldersGridSize: 60
   m_LastProjectPath: C:\Users\ldruk\Documents\GitHub\VR_KTU\KTU_VR0.5
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 1422}
-    m_SelectedIDs: d4130000
-    m_LastClickedID: 5076
-    m_ExpandedIDs: 000000000e110000c011000050130000421400008a140000d01400003a150000801600000417000012180000821800000619000082190000b81d0000281e0000482100004e210000562100006222000088220000ca220000ce220000f42200001c230000a623000000ca9a3b
+    scrollPos: {x: 0, y: 110}
+    m_SelectedIDs: 22140000
+    m_LastClickedID: 5154
+    m_ExpandedIDs: 0000000010110000c211000052130000441400008c140000d21400003c150000841600000817000016180000861800000a19000086190000bc1d00002c1e00004e210000542100005c210000682200008e220000d0220000d4220000fa22000024230000ae23000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -526,7 +526,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000e110000c011000050130000421400008a140000d01400003a150000801600000417000012180000821800000619000082190000b81d0000281e0000482100004e210000562100006222000088220000ca220000ce220000f4220000a6230000
+    m_ExpandedIDs: 0000000010110000c211000052130000441400008c140000d21400003c150000841600000817000016180000861800000a19000086190000bc1d00002c1e00004e210000542100005c210000682200008e220000d0220000d4220000fa22000024230000ae230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -645,23 +645,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b421ffff
-      m_LastClickedID: -56908
-      m_ExpandedIDs: 9621ffffb421ffff5a96ffffdef8fffff4f8ffff02f9ffff04f9ffff08f9ffff0af9ffff0cf9ffff0ef9ffff10f9ffff12f9ffff14f9ffff2af9ffff2ef9ffff32f9ffff36f9ffff3af9ffff3ef9ffff42f9ffff46f9ffff4af9ffff4ef9ffff68f9ffff78f9ffff7cf9ffff86f9fffff0f9ffff34fbffff38fbffff3afbffff3cfbffff3efbffff40fbffff42fbffff44fbffff46fbffff5cfbffff60fbffff64fbffff68fbffff6cfbffff70fbffff74fbffff78fbffff7cfbffff80fbffff94fbffffaafbffffaefbffffb8fbffffd2fbffff6e260000322a0000d82b0000
+      m_SelectedIDs: 26f8ffff
+      m_LastClickedID: -2010
+      m_ExpandedIDs: 4ef8ffff78f8fffffaf9ffffd2fbffff8226000086280000d42b0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: PlayAreaPreviewEdge
-        m_OriginalName: PlayAreaPreviewEdge
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -61936
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 9}
       m_SearchString: 
@@ -703,9 +703,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -50.89308, y: 67.0231, z: -107.58859}
+    m_Target: {x: -18.593466, y: -1.2473917, z: -130.28026}
     speed: 2
-    m_Value: {x: -50.89308, y: 67.0231, z: -107.58859}
+    m_Value: {x: -18.593466, y: -1.2473917, z: -130.28026}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -733,13 +733,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.017228456, y: -0.96795434, z: 0.06924865, w: 0.24077415}
+    m_Target: {x: -0.012728469, y: -0.9872326, z: 0.10795894, w: -0.11642474}
     speed: 2
-    m_Value: {x: 0.017228456, y: -0.96795434, z: 0.06924865, w: 0.24077415}
+    m_Value: {x: -0.012728469, y: -0.9872326, z: 0.10795894, w: -0.11642474}
   m_Size:
-    m_Target: 341.32986
+    m_Target: 21.441515
     speed: 2
-    m_Value: 341.32986
+    m_Value: 21.441515
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -856,54 +856,4 @@ MonoBehaviour:
     y: 966
     width: 685
     height: 154
-  m_PersistentViewDataDictionary: {fileID: 0}
---- !u!114 &25
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12059, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEditor:UnityEditor.Experimental.TerrainAPI:PaintTextureTool
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Failed to load
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 320
-    height: 550
-  m_PersistentViewDataDictionary: {fileID: 0}
---- !u!114 &26
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12059, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEditor:UnityEditor.Experimental.TerrainAPI:SetHeightTool
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Failed to load
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 320
-    height: 550
   m_PersistentViewDataDictionary: {fileID: 0}
