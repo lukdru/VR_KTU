@@ -60,6 +60,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Inventory.cs" />
+    <Compile Include="Assets\Scripts\Item.cs" />
+    <Compile Include="Assets\Scripts\Main.cs" />
     <Compile Include="Assets\Scripts\VR_GrabObject.cs" />
     <Compile Include="Assets\Scripts\VR_Main.cs" />
     <None Include="Assets\SimpleSky\ReadMe.txt" />
