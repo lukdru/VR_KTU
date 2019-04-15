@@ -5,6 +5,7 @@ using UnityEngine;
 public class Main : MonoBehaviour
 {
     public GameObject ControllerRight;
+    public Camera
 
     // Update is called once per frame
     void Update()

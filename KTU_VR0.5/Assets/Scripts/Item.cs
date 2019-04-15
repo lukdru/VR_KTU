@@ -14,10 +14,4 @@ public class Item : MonoBehaviour
         this.title = title;
         this.description = description;
     }
-
-    public void Update()
-    {
-    }
-
-
 }
