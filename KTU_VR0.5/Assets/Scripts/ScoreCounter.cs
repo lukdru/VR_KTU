@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class ScoreCounter : MonoBehaviour
 {
-    public int pointsToAdd;
+    public int pointsToAdd = 1;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if(other.gameObject.tag == "Player" && GameObject.Find("Back").GetComponent<BackScript>().inBack == true)
         {
-            ScoreManager.AddPoints(pointsToAdd);
+            //ScoreManager.AddPoints(pointsToAdd);
+            Debug.Log("Taskas!");
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
     }
-      
 }

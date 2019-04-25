@@ -18,7 +18,7 @@ public class ScoreManager : MonoBehaviour
     void Update()
     {
         //Debug.Log("UpdatingScore");
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("SpaceDown");
             AddPoints(1);
