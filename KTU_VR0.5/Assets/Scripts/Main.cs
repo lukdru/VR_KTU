@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR;
 
 public class Main : MonoBehaviour
 {
@@ -13,7 +14,8 @@ public class Main : MonoBehaviour
     void Update()
     {
         //Check();
-        Check2();
+        //Check2();
+        //if(SteamVR_Input._default.
     }
 
     public void Check()

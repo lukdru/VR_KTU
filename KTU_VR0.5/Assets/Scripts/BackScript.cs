@@ -11,7 +11,7 @@ public class BackScript : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             inBack = true;
-            //Debug.Log("Ranka uz nugaros !");
+            Debug.Log("Ranka uz nugaros !");
         }
     }
 
@@ -20,7 +20,7 @@ public class BackScript : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             inBack = false;
-            //Debug.Log("Ranka nebe uz nugaros :/");
+            Debug.Log("Ranka nebe uz nugaros :/");
         }
     }
 }
