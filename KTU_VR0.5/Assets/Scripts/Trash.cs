@@ -15,17 +15,18 @@ public class Trash : MonoBehaviour
 
     private void OnTriggerEnter (Collider other)
     {
-        if (gameObject.tag == "Paper" || other.gameObject.tag == "Paper")
+        if (gameObject.tag == "Paper" && other.gameObject.tag == "Paper")
         {
             InBin(other);
         }
-        if (gameObject.tag == "Plastic" || other.gameObject.tag == "Plastic")
+        if (gameObject.tag == "Plastic" && other.gameObject.tag == "Plastic")
         {
             InBin(other);
         }
-        if (gameObject.tag == "Glass" || other.gameObject.tag == "Glass")
+        if (gameObject.tag == "Glass" && other.gameObject.tag == "Glass")
         {
             InBin(other);
+            Debug.Log("Stiklas ikrito");
         }
         Debug.Log("Rezultatas = " + goal);
     }
@@ -34,7 +35,7 @@ public class Trash : MonoBehaviour
     {
         other.gameObject.GetComponent<Interactable>().highlightOnHover = false;
         other.gameObject.GetComponent<Interactable>().handFollowTransform = false;
-        other.gameObject.GetComponent<Throwable>().attachmentFlags = Hand.AttachmentFlags.TurnOffGravity;
+        other.gameObject.GetComponent<Throwable>().attachmentFlags = Hand.AttachmentFlags.TurnOnKinematic;
         goal--;
         Debug.Log("!!!");
         if (goal == 0)

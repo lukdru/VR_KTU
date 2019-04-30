@@ -19,7 +19,7 @@ public class TrophyManager : MonoBehaviour
         //Debug.Log("UpdatingScore");
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("SpaceDown");
+            //Debug.Log("SpaceDown");
             AddPoints(1);
         }
         scorefield.text = "" + score.ToString();

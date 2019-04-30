@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Trophy : MonoBehaviour
 {
-    int pointsToAdd = 1;
+    public int pointsToAdd = 1;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        Debug.Log("Paimtas daiktas" + other.name);
+        //Debug.Log("Paimtas daiktas" + other.name);
         if (other.gameObject.tag == "Player" && ( GameObject.Find("LeftHand").GetComponent<BackScript>().inBack == true || GameObject.Find("RightHand").GetComponent<BackScript>().inBack == true))
         {
-            TrophyManager.AddPoints(pointsToAdd);
-            Debug.Log("Taskas!");
             Destroy(gameObject);
+            TrophyManager.AddPoints(pointsToAdd);
+            //Debug.Log("Taskas!");
         }
     }
 }
