@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\Main.cs" />
+    <Compile Include="Assets\Scripts\MenuButton.cs" />
     <Compile Include="Assets\Scripts\TestGames.cs" />
     <Compile Include="Assets\Scripts\Trash.cs" />
     <Compile Include="Assets\Scripts\Trophy.cs" />
