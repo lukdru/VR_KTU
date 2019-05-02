@@ -8,6 +8,7 @@ TagManager:
   - Paper
   - Plastic
   - Glass
+  - Ball
   layers:
   - Default
   - TransparentFX

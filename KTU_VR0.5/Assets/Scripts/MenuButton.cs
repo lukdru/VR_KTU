@@ -2,18 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Valve.VR;
 
 public class MenuButton : MonoBehaviour
 {
     private string levelLoad = "MainScene";
 
-    void onTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Collide");
-        if (other.gameObject.tag =="Player")
+        if (other.gameObject.tag =="MainCamera")
         {
             Debug.Log("Kita Scena");
-            SceneManager.LoadScene(levelLoad);
+            SteamVR_LoadLevel.Begin(levelLoad);
+            //SceneManager.LoadScene(levelLoad);
         }
     }
 }
