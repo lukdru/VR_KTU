@@ -41,6 +41,10 @@
       "requirement": "optional"
     },
     {
+      "name": "/actions/default/in/Press",
+      "type": "boolean"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
@@ -162,7 +166,8 @@
       "/actions/default/in/InteractUI": "Interact With UI",
       "/actions/default/in/GrabPinch": "Grab Pinch",
       "/actions/default/in/GrabGrip": "Grab Grip",
-      "/actions/default/in/Squeeze": "squeeze"
+      "/actions/default/in/Squeeze": "squeeze",
+      "/actions/default/in/Press": "Press"
     }
   ]
 }

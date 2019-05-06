@@ -21,7 +21,7 @@ public class ColliderTop : MonoBehaviour
         {
             OnTop = true;
             BasketballCoroutineStart = true;
-            Debug.Log("Kamuolys virsuj!");
+            //Debug.Log("Kamuolys virsuj!");
         }
     }
 
@@ -30,6 +30,6 @@ public class ColliderTop : MonoBehaviour
         yield return new WaitForSeconds(1);
         OnTop = false;
         BasketballCoroutineStart = false;
-        Debug.Log("Nebesiskaito");
+        //Debug.Log("Nebesiskaito");
     }
 }

@@ -10,10 +10,11 @@ public class ColliderBottom : MonoBehaviour
     public Text scorefield;
     public Text resultfield;
     public GameObject trophy;
+    public GameObject Spawn;
 
     private void Start()
     {
-        trophy.SetActive(false);
+        //trophy.SetActive(false);
         resultfield.text = "" + result.ToString();
     }
 
@@ -22,7 +23,9 @@ public class ColliderBottom : MonoBehaviour
         scorefield.text = "" + score.ToString();
         if (score == result)
         {
-            trophy.SetActive(true);
+            //trophy.SetActive(true);
+            Instantiate(trophy, Spawn.transform.position, Quaternion.identity);
+            score = 0;
         }
     }
 
