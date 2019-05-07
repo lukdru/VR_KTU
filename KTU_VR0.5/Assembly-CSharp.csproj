@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BalloonScore.cs" />
     <Compile Include="Assets\BasketballCourt.cs" />
     <Compile Include="Assets\Scripts\BackScript.cs" />
     <Compile Include="Assets\Scripts\Basketball.cs" />

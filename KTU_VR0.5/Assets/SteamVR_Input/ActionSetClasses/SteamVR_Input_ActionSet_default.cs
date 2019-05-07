@@ -89,11 +89,11 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Boolean Press
+        public virtual SteamVR_Action_Vector2 JoyStick
         {
             get
             {
-                return SteamVR_Actions.default_Press;
+                return SteamVR_Actions.default_JoyStick;
             }
         }
         

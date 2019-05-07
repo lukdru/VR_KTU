@@ -15,7 +15,7 @@ public class MenuButton : MonoBehaviour
         {
             Debug.Log("Kita Scena");
             SteamVR_LoadLevel.Begin(levelLoad);
-            //SceneManager.LoadScene(levelLoad);
+            ///SceneManager.LoadScene(levelLoad);
         }
     }
 }
