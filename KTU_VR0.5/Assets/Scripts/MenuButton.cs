@@ -7,7 +7,18 @@ using Valve.VR;
 public class MenuButton : MonoBehaviour
 {
     private string levelLoad = "MainScene";
-
+    private void Update()
+    {
+        if (Input.GetKey("escape"))
+        {
+            Debug.Log("Escape");
+            Application.Quit();
+        }
+        if (Input.GetKey("[+]"))
+        {
+            SteamVR_LoadLevel.Begin(levelLoad);
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Collide");

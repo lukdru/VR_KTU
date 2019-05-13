@@ -19,17 +19,19 @@ public class TestGames : MonoBehaviour
     private Vector3 TopGrow = new Vector3 (50, 50, 50);
     private Vector3 BottomGrow = new Vector3(1, 1, 1);
     private Vector3 CurrentScale;
+    private Vector3 StartScale;
 
     private void Start()
     {
         //Player.transform.position = Player.transform.position + new Vector3(0, 1.3f, 0);
         Player = GameObject.Find("Player");
         Teleporting = GameObject.Find("Teleporting");
-        Recycling = GameObject.Find("TusiavimasTP");
+        Recycling = GameObject.Find("RusiavimasTP");
         Basketball = GameObject.Find("KrepsinisTP");
         Elektronika = GameObject.Find("ElektronikaTP");
         MonaLiza = GameObject.Find("MonaLizaTP");
         CurrentScale = Player.transform.localScale;
+        StartScale = Player.transform.localScale;
         Player.transform.position = Player.transform.position + new Vector3(0, 1.3f, 0);
     }
 
@@ -63,7 +65,22 @@ public class TestGames : MonoBehaviour
                 Debug.Log("MonaLiza");
                 Player.transform.position = MonaLiza.transform.position;
             }
+            if (Input.GetKey("escape"))
+            {
+                Debug.Log("Escape");
+                Application.Quit();
+            }
+        if (Input.GetKeyDown("[-]"))
+        {
+            Debug.Log("Elektronika");
+            CurrentScale = StartScale;
         }
+        if (Input.GetKeyDown("[+]"))
+        {
+            Debug.Log("Elektronika");
+            CurrentScale = new Vector3(50f, 50f, 50f);
+        }
+    }
 
         void Scaling()
         {
