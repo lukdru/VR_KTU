@@ -138,7 +138,7 @@ MonoBehaviour:
   m_MinSize: {x: 830, y: 498}
   m_MaxSize: {x: 22012, y: 14048}
   vertical: 0
-  controlID: 122
+  controlID: 117
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -189,7 +189,7 @@ MonoBehaviour:
   m_MinSize: {x: 408, y: 498}
   m_MaxSize: {x: 14008, y: 14048}
   vertical: 1
-  controlID: 123
+  controlID: 118
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -214,7 +214,7 @@ MonoBehaviour:
   m_MinSize: {x: 408, y: 224}
   m_MaxSize: {x: 8008, y: 4024}
   vertical: 0
-  controlID: 124
+  controlID: 119
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -293,7 +293,7 @@ MonoBehaviour:
   m_MinSize: {x: 338, y: 274}
   m_MaxSize: {x: 14008, y: 10024}
   vertical: 0
-  controlID: 197
+  controlID: 194
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -506,9 +506,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 46170000
       m_LastClickedID: 0
-      m_ExpandedIDs: bcf7feffdcf7feff0ef8feffd2f9feff0cfbfeff2cfbfeff2cfefefff6fffeffe856ffffd87bffffa6b8ffff14bfffffd6d1ffff44d6ffffd2fbffff6a9b0200b69d02006ca80200d4b7040020bb0400
+      m_ExpandedIDs: cea1ffffe4efffffd2fbffff4c2e0000282f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -564,9 +564,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -14.521033, y: 1.8943281, z: 355.57037}
+    m_Target: {x: 6.1596637, y: 2.3684454, z: -28.48638}
     speed: 2
-    m_Value: {x: -14.521033, y: 1.8943281, z: 355.57037}
+    m_Value: {x: 6.1596637, y: 2.3684454, z: -28.48638}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -594,13 +594,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.005175006, y: -0.9714562, z: 0.02128086, w: 0.23620588}
+    m_Target: {x: 0.00086749747, y: -0.99912924, z: 0.027893066, w: 0.031015625}
     speed: 2
-    m_Value: {x: 0.005175006, y: -0.9714562, z: 0.02128086, w: 0.23620588}
+    m_Value: {x: 0.00086749747, y: -0.99912924, z: 0.027893066, w: 0.031015625}
   m_Size:
-    m_Target: 20.782202
+    m_Target: 0.48683822
     speed: 2
-    m_Value: 20.782202
+    m_Value: 0.48683822
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -676,20 +676,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 60
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: 60
   m_LastProjectPath: C:\Users\ldruk\Documents\GitHub\VR_KTU\KTU_VR0.5
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 4a110000
-    m_LastClickedID: 4426
-    m_ExpandedIDs: 000000004a110000e61100000212000026120000a4120000b813000044140000a0140000be140000081500005a150000c81500001c170000bc170000d01800004619000082190000ce190000521a0000dc1a0000ba1e0000301f0000a0220000a6220000ae220000bc230000e62300002a2400002e2400005624000084240000062500001c25000000ca9a3b
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 20140000
+    m_LastClickedID: 5152
+    m_ExpandedIDs: 000000003c110000d6110000f2110000161200009212000094130000201400007c140000de1400002e150000801700008e180000001900003819000084190000061a00008e1a0000281d00009a1d00000021000006210000122200003a2200007e220000a6220000c4220000442300005a2300006e5e0000705e0000725e0000745e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -717,7 +717,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004a110000e61100000212000026120000a4120000b813000044140000a0140000be140000081500005a150000c81500001c170000bc170000d01800004619000082190000ce190000521a0000dc1a0000ba1e0000301f0000a0220000a6220000ae220000bc230000e62300002a2400002e2400005624000084240000062500001c250000
+    m_ExpandedIDs: 000000003c110000d6110000f2110000161200009212000094130000201400007c140000de1400002e150000801700008e180000001900003819000084190000061a00008e1a0000281d00009a1d00000021000006210000122200003a2200007e220000a6220000c4220000442300005a2300006e5e0000705e0000725e0000745e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -769,7 +769,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 99.5}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 60
   m_DirectoriesAreaWidth: 223
 --- !u!114 &22
@@ -833,53 +833,3 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
---- !u!114 &24
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12059, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEditor:UnityEditor.Experimental.TerrainAPI:PaintTextureTool
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Failed to load
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 320
-    height: 550
-  m_PersistentViewDataDictionary: {fileID: 0}
---- !u!114 &25
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12059, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEditor:UnityEditor.Experimental.TerrainAPI:SetHeightTool
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Failed to load
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 320
-    height: 550
-  m_PersistentViewDataDictionary: {fileID: 0}
