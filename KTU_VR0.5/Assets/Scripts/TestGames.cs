@@ -38,9 +38,9 @@ public class TestGames : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Scaling();
+        //Scaling();
         Places();
-        //ScalingWithSpace();
+        ScalingWithSpace();
     }
 
         void Places()
