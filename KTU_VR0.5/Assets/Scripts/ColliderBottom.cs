@@ -31,11 +31,11 @@ public class ColliderBottom : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //Debug.Log("Paimtas daiktas" + other.name);
-        if (other.gameObject.tag == "Ball" && (GameObject.Find("Counting").GetComponent<ColliderTop>().OnTop == true))
+        Debug.Log("AntrasRatas");
+        if ((other.gameObject.tag == "Ball" || other.gameObject.tag == "Ball1" ) && (GameObject.Find("Counting").GetComponent<ColliderTop>().OnTop == true))
         {
             score++;
-            //Debug.Log("Taskas!");
+            Debug.Log("Taskas!");
         }
     }
 

@@ -5,8 +5,8 @@ using Valve.VR;
 
 public class TestGames : MonoBehaviour
 {
-    public SteamVR_Input_Sources handType; // 1
-    public SteamVR_Action_Vector2 JoystickVector; // 2
+    public SteamVR_Input_Sources handType;
+    public SteamVR_Action_Vector2 JoystickVector;
 
     GameObject Teleporting;
     GameObject Player;
@@ -20,10 +20,11 @@ public class TestGames : MonoBehaviour
     private Vector3 BottomGrow = new Vector3(1, 1, 1);
     private Vector3 CurrentScale;
     private Vector3 StartScale;
+    private bool SpacePressed = false;
 
     private void Start()
     {
-        //Player.transform.position = Player.transform.position + new Vector3(0, 1.3f, 0);
+        
         Player = GameObject.Find("Player");
         Teleporting = GameObject.Find("Teleporting");
         Recycling = GameObject.Find("RusiavimasTP");
@@ -35,46 +36,51 @@ public class TestGames : MonoBehaviour
         Player.transform.position = Player.transform.position + new Vector3(0, 1.3f, 0);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //Scaling();
+        Scaling();
         Places();
         ScalingWithSpace();
     }
 
-        void Places()
+    void Places()
+    {
+        if (Input.GetKeyDown(KeyCode.Keypad1))
         {
-            if (Input.GetKeyDown(KeyCode.Keypad1))
-            {
-                Debug.Log("Elektronika");
-                Player.transform.position = Elektronika.transform.position;
-            }
-            if (Input.GetKeyDown(KeyCode.Keypad2))
-            {
-                Debug.Log("Krepsinio Zona");
-                Player.transform.position = Basketball.transform.position;
-            }
-            if (Input.GetKeyDown(KeyCode.Keypad3))
-            {
-                Debug.Log("Rusiavimo Zona");
-                Player.transform.position = Recycling.transform.position;
-            }
-            if (Input.GetKeyDown(KeyCode.Keypad4))
-            {
-                Debug.Log("MonaLiza");
-                Player.transform.position = MonaLiza.transform.position;
-            }
-            if (Input.GetKey("escape"))
-            {
-                Debug.Log("Escape");
-                Application.Quit();
-            }
+            Debug.Log("Elektronika");
+            Player.transform.position = Elektronika.transform.position;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Keypad2))
+        {
+            Debug.Log("Krepsinio Zona");
+            Player.transform.position = Basketball.transform.position;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Keypad3))
+        {
+            Debug.Log("Rusiavimo Zona");
+            Player.transform.position = Recycling.transform.position;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Keypad4))
+        {
+            Debug.Log("MonaLiza");
+            Player.transform.position = MonaLiza.transform.position;
+        }
+
+        if (Input.GetKey("escape"))
+        {
+            Debug.Log("Escape");
+            Application.Quit();
+        }
+
         if (Input.GetKeyDown("[-]"))
         {
             Debug.Log("Elektronika");
             CurrentScale = StartScale;
         }
+
         if (Input.GetKeyDown("[+]"))
         {
             Debug.Log("Elektronika");
@@ -82,54 +88,49 @@ public class TestGames : MonoBehaviour
         }
     }
 
-        void Scaling()
+    void Scaling()
+    {
+        Vector2 JSValue = JoystickVector.GetAxis(SteamVR_Input_Sources.Any);
+
+        if (JSValue.y == 1 && TopGrow.x >= CurrentScale.x)
         {
-
-            Vector2 JSValue = JoystickVector.GetAxis(SteamVR_Input_Sources.Any);
-
-            if (JSValue.y == 1 && TopGrow.x >= CurrentScale.x)
-            {
-                //Debug.Log("VIRSUJ");
-                CurrentScale = CurrentScale + new Vector3(0.1f, 0.1f, 0.1f);
-            Player.transform.position = Player.transform.position + new Vector3(0, 0, 0.1f);
-            //Debug.Log(CurrentScale);
+            //Debug.Log("VIRSUJ");
+            CurrentScale = CurrentScale + new Vector3(0.1f, 0.1f, 0.1f);
         }
+
         if (JSValue.y == -1 && BottomGrow.x <= CurrentScale.x)
-            {
-                //Debug.Log("APACIOJ");
-                CurrentScale = CurrentScale - new Vector3(0.1f, 0.1f, 0.1f);
-                Player.transform.position = Player.transform.position - new Vector3(0, 0, 0.1f);
-            //Debug.Log(CurrentScale);
+        {
+            //Debug.Log("APACIOJ");
+            CurrentScale = CurrentScale - new Vector3(0.1f, 0.1f, 0.1f);
+            Debug.Log(CurrentScale);
         }
-
+        //Debug.Log(CurrentScale);
         Player.transform.localScale = CurrentScale;
         Teleporting.transform.localScale = CurrentScale;
-            //Debug.Log(Player.transform.localScale);
-        }
+        //Debug.Log(Player.transform.localScale);
+    }
 
-        void ScalingWithSpace()
+    void ScalingWithSpace()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
         {
+            IsGrown++;
+            if (IsGrown == 4)
+            {
+                IsGrown = 1;
+            }
             if (IsGrown == 1)
             {
-                Player.transform.localScale = new Vector3(1, 1, 1);
+                CurrentScale = new Vector3(1, 1, 1);
             }
             if (IsGrown == 2)
             {
-                Player.transform.localScale = new Vector3(20, 20, 20);
+                CurrentScale = new Vector3(20, 20, 20);
             }
             if (IsGrown == 3)
             {
-                Player.transform.localScale = new Vector3(50, 50, 50);
-            }
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                IsGrown++;
-                if (IsGrown == 4)
-                {
-                    IsGrown = 1;
-                }
-
+                CurrentScale = new Vector3(50, 50, 50);
             }
         }
-
+    }
 }

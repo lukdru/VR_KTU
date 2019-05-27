@@ -5,7 +5,7 @@ using UnityEngine;
 public class BasketballCourt2 : MonoBehaviour
 {
 
-    public GameObject Ball;
+    //public GameObject Ball;
     //public GameObject SpawnPlace;
 
     private void OnTriggerExit(Collider other)

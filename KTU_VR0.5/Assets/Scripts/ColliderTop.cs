@@ -17,7 +17,7 @@ public class ColliderTop : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Ball")
+        if (other.gameObject.tag == "Ball" || other.gameObject.tag == "Ball1")
         {
             OnTop = true;
             BasketballCoroutineStart = true;
@@ -30,6 +30,6 @@ public class ColliderTop : MonoBehaviour
         yield return new WaitForSeconds(1);
         OnTop = false;
         BasketballCoroutineStart = false;
-        //Debug.Log("Nebesiskaito");
+        //Debug.Log("Nebesiskaito kad virsuj!");
     }
 }
