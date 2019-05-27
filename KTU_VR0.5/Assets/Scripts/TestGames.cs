@@ -92,13 +92,13 @@ public class TestGames : MonoBehaviour
     {
         Vector2 JSValue = JoystickVector.GetAxis(SteamVR_Input_Sources.Any);
 
-        if (JSValue.y == 1 && TopGrow.x >= CurrentScale.x)
+        if (JSValue.y > 0.3 && TopGrow.x >= CurrentScale.x)
         {
             //Debug.Log("VIRSUJ");
             CurrentScale = CurrentScale + new Vector3(0.1f, 0.1f, 0.1f);
         }
 
-        if (JSValue.y == -1 && BottomGrow.x <= CurrentScale.x)
+        if (JSValue.y < -0.3 && BottomGrow.x <= CurrentScale.x)
         {
             //Debug.Log("APACIOJ");
             CurrentScale = CurrentScale - new Vector3(0.1f, 0.1f, 0.1f);
