@@ -2,18 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using Valve.VR;
 
 public class TrophyManager : MonoBehaviour
 {
     public static int score;
-    public Text scorefield;
     private string levelLoad = "MainScene";
+    public Text scorefield;
+    public GameObject scoreObject;
 
     void Start()
     {
-        //scorefield = GetComponent<Text>();
         score = 0;
+        scoreObject = GameObject.Find("HandScore");
+        scorefield = scoreObject.GetComponent<Text>();
+
+        Debug.Log(scorefield.text + "TESTAS JEI 0");
     }
 
     void Update()
@@ -29,7 +34,8 @@ public class TrophyManager : MonoBehaviour
         if (score == 15)
         {
             score = 0;
-            SteamVR_LoadLevel.Begin(levelLoad);
+            //SteamVR_LoadLevel.Begin(levelLoad);
+            SceneManager.LoadScene(levelLoad);
         }
     }
 

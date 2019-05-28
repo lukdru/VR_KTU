@@ -12,8 +12,9 @@ public class Trophy : MonoBehaviour
         if (other.gameObject.tag == "Player" && ( GameObject.Find("LeftHand").GetComponent<BackScript>().inBack == true || GameObject.Find("RightHand").GetComponent<BackScript>().inBack == true))
         {
             Destroy(gameObject);
+            Debug.Log("Objektas sunaikintas!");
             TrophyManager.AddPoints(pointsToAdd);
-            //Debug.Log("Taskas!");
+            Debug.Log("Taskas pridetas!");
         }
     }
 }

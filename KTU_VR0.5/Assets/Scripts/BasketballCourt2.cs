@@ -16,7 +16,7 @@ public class BasketballCourt2 : MonoBehaviour
             //Ball.GetComponent<Rigidbody>().isKinematic = true;
             //Ball.GetComponent<Rigidbody>().isKinematic = false;
             //Ball.transform.position = SpawnPlace.transform.position;
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
             //Instantiate(Ball, SpawnPlace.transform.position, Quaternion.identity);
         }
     }

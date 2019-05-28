@@ -25,8 +25,8 @@ public class ChangeScene : MonoBehaviour
         if (other.gameObject.tag =="MainCamera")
         {
             Debug.Log("Kita Scena");
-            SteamVR_LoadLevel.Begin(levelLoad);
-            ///SceneManager.LoadScene(levelLoad);
+            //SteamVR_LoadLevel.Begin(levelLoad);
+            SceneManager.LoadScene(levelLoad);
         }
     }
 }
