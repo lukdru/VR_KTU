@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-C:/Users/Lukas KTU-VR/Documents/GitHub/VR_KTU/BUILD_KTUVR0.91/KTU_VR.exe
+C:/Users/ldruk/Documents/GitHub/VR_KTU/BUILD_KTUVR0.92/KTU_VR.exe
 SceneListBegin?
 Assets/Scenes/MenuScene.unity
 Assets/Scenes/MainScene.unity
