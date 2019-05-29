@@ -24,14 +24,15 @@ public class TrophyManager : MonoBehaviour
     void Update()
     {
         //Debug.Log("UpdatingScore");
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            //Debug.Log("SpaceDown");
-            AddPoints(1);
-        }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    //Debug.Log("SpaceDown");
+        //    AddPoints(1);
+        //}
+
         scorefield.text = "" + score.ToString();
 
-        if (score == 15)
+        if (score == 16)
         {
             score = 0;
             //SteamVR_LoadLevel.Begin(levelLoad);
